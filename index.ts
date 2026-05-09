@@ -111,8 +111,8 @@ app.post(
 
       const result = await pool.query(
         `INSERT INTO incidencias (titulo, descripcion, estado, foto, creado_en)
-   VALUES ($1, $2, 'pendiente', $3, NOW())
-   RETURNING *`,
+       VALUES ($1, $2, 'pendiente', $3, NOW() AT TIME ZONE 'America/Bogota')
+       RETURNING *`,
         [titulo, descripcion, imagen],
       );
       res.status(201).json(result.rows[0]);
