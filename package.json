@@ -1,0 +1,28 @@
+{
+  "name": "gestor-incidencias-backend",
+  "version": "1.0.0",
+  "main": "src/back/index.ts",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/back/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^4.22.1",
+    "multer": "^2.1.1",
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.25",
+    "@types/multer": "^2.1.0",
+    "@types/node": "^20.11.30",
+    "@types/pg": "^8.11.6",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
