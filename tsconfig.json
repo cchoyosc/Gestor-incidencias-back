@@ -6,9 +6,10 @@
     "esModuleInterop": true,
     "strict": true,
     "outDir": "dist",
+    "rootDir": ".",
     "skipLibCheck": true,
-    "jsx": "react-jsx",
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src"]
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules", "dist"]
 }
